@@ -1,0 +1,53 @@
+/* Estilos de la tienda */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #222;
+  line-height: 1.6;
+}
+
+header, footer { text-align: center; padding: 20px 0; }
+header { border-bottom: 1px solid #ccc; }
+footer { border-top: 1px solid #ccc; margin-top: 40px; font-size: 0.9rem; color: #555; }
+
+nav a { margin: 0 10px; color: #0f766e; font-weight: bold; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+h1, h2, h3 { font-family: Georgia, serif; }
+
+/* Lista de libros: tres columnas que se adaptan al ancho */
+.libros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.libro { text-align: center; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+.libro h3 { margin: 10px 0 0; }
+.libro p { margin: 4px 0; }
+
+/* Las portadas ocupan todo el ancho de su tarjeta */
+img { max-width: 100%; height: auto; }
+.libro img { width: 100%; border-radius: 4px; }
+
+.precio { font-weight: bold; font-size: 1.2rem; }
+
+.boton {
+  display: inline-block;
+  background: #0f766e;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.boton:hover { background: #0b5a54; }
+
+/* Página de descripción */
+.detalle { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; }
+.detalle img { width: 280px; }
+.detalle div { flex: 1; min-width: 260px; }
