@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ec;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    color: #c2570c;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+header {
+    background-color: #222b45;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #e07a1f;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #f4b26b;
+    border-bottom: 2px solid #f4b26b;
+}
+
+#carrito {
+    margin: 12px 0 0 0;
+    font-size: 0.95rem;
+    color: #f4b26b;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.descripcion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.descripcion h2 {
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+}
+
+main > section > h2 {
+    border-left: 5px solid #e07a1f;
+    padding-left: 10px;
+}
+
+.listalibros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.libro {
+    background-color: white;
+    width: 290px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.libro:hover {
+    transform: translateY(-5px);
+}
+
+.libro img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.libro h3 {
+    margin: 12px 0 0 0;
+}
+
+.libro p {
+    margin: 5px 0;
+}
+
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222b45;
+}
+
+.boton, button {
+    display: inline-block;
+    background-color: #e07a1f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover, button:hover {
+    background-color: #b9600f;
+}
+
+.detalles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.detalles img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.info {
+    flex: 1;
+    min-width: 260px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.info h3 {
+    color: #555;
+    margin-top: 5px;
+}
+
+#mensaje {
+    color: #1a7f37;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+footer {
+    background-color: #222b45;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+footer a {
+    color: #f4b26b;
+}
