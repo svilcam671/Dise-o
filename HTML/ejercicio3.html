@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Resumen de etiquetas HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi resumen de etiquetas HTML</h1>
+
+    <table>
+        <tr>
+            <th>Etiqueta</th>
+            <th>Definición</th>
+            <th>Sintaxis</th>
+            <th>Ejemplo en vista web</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; ... &lt;h6&gt;</td>
+            <td>Encabezados, de más a menos importante.</td>
+            <td>&lt;h1&gt;Título&lt;/h1&gt;</td>
+            <td><h3>Título</h3></td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Párrafo de texto.</td>
+            <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+            <td><p>Texto</p></td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>Salto de línea.</td>
+            <td>Línea 1&lt;br&gt;Línea 2</td>
+            <td>Línea 1<br>Línea 2</td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Línea horizontal de separación.</td>
+            <td>&lt;hr&gt;</td>
+            <td><hr></td>
+        </tr>
+        <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Texto importante (negrita).</td>
+            <td>&lt;strong&gt;Texto&lt;/strong&gt;</td>
+            <td><strong>Texto</strong></td>
+        </tr>
+        <tr>
+            <td>&lt;em&gt;</td>
+            <td>Texto enfatizado (cursiva).</td>
+            <td>&lt;em&gt;Texto&lt;/em&gt;</td>
+            <td><em>Texto</em></td>
+        </tr>
+        <tr>
+            <td>&lt;u&gt;</td>
+            <td>Texto subrayado.</td>
+            <td>&lt;u&gt;Texto&lt;/u&gt;</td>
+            <td><u>Texto</u></td>
+        </tr>
+        <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Subíndice.</td>
+            <td>H&lt;sub&gt;2&lt;/sub&gt;O</td>
+            <td>H<sub>2</sub>O</td>
+        </tr>
+        <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Superíndice.</td>
+            <td>x&lt;sup&gt;2&lt;/sup&gt;</td>
+            <td>x<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>Enlace a otra página.</td>
+            <td>&lt;a href="url"&gt;Texto&lt;/a&gt;</td>
+            <td><a href="https://www.google.com">Google</a></td>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Inserta una imagen.</td>
+            <td>&lt;img src="ruta" alt="texto"&gt;</td>
+            <td><img src="FONDOS_PARA_WEB/paisaje.png" alt="Paisaje" width="80"></td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Lista sin ordenar.</td>
+            <td>&lt;ul&gt;&lt;li&gt;Uno&lt;/li&gt;&lt;/ul&gt;</td>
+            <td><ul><li>Uno</li><li>Dos</li></ul></td>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>Lista ordenada (numerada).</td>
+            <td>&lt;ol&gt;&lt;li&gt;Uno&lt;/li&gt;&lt;/ol&gt;</td>
+            <td><ol><li>Uno</li><li>Dos</li></ol></td>
+        </tr>
+        <tr>
+            <td>&lt;li&gt;</td>
+            <td>Elemento de una lista.</td>
+            <td>&lt;li&gt;Elemento&lt;/li&gt;</td>
+            <td><ul><li>Elemento</li></ul></td>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Crea una tabla (con &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;).</td>
+            <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+            <td><table><tr><th>A</th><th>B</th></tr><tr><td>1</td><td>2</td></tr></table></td>
+        </tr>
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>Contenedor genérico de bloque.</td>
+            <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+            <td><div style="border:1px dashed gray">Contenido</div></td>
+        </tr>
+        <tr>
+            <td>&lt;span&gt;</td>
+            <td>Contenedor genérico en línea.</td>
+            <td>&lt;span&gt;Texto&lt;/span&gt;</td>
+            <td>Un <span style="color:red">texto</span> rojo</td>
+        </tr>
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>Cita larga.</td>
+            <td>&lt;blockquote&gt;Cita&lt;/blockquote&gt;</td>
+            <td><blockquote>Cita</blockquote></td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Texto preformateado (respeta los espacios).</td>
+            <td>&lt;pre&gt;Texto&lt;/pre&gt;</td>
+            <td><pre>A    B
+  C</pre></td>
+        </tr>
+        <tr>
+            <td>&lt;input&gt;</td>
+            <td>Campo de un formulario.</td>
+            <td>&lt;input type="text"&gt;</td>
+            <td><input type="text" placeholder="Escribe aquí"></td>
+        </tr>
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>Botón.</td>
+            <td>&lt;button&gt;Pulsar&lt;/button&gt;</td>
+            <td><button>Pulsar</button></td>
+        </tr>
+        <tr>
+            <td>&lt;select&gt;</td>
+            <td>Menú desplegable (con &lt;option&gt;).</td>
+            <td>&lt;select&gt;&lt;option&gt;A&lt;/option&gt;&lt;/select&gt;</td>
+            <td><select><option>Opción A</option><option>Opción B</option></select></td>
+        </tr>
+        <tr>
+            <td>&lt;textarea&gt;</td>
+            <td>Área de texto de varias líneas.</td>
+            <td>&lt;textarea&gt;&lt;/textarea&gt;</td>
+            <td><textarea rows="2"></textarea></td>
+        </tr>
+    </table>
+</body>
+</html>

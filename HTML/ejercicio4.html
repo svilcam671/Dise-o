@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - HTML vs HTML5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diferencias entre HTML4 y HTML5</h1>
+
+    <h2>¿Qué diferencias principales hay?</h2>
+    <p>
+        HTML5 es una versión más moderna y sencilla. Añade etiquetas semánticas
+        (como &lt;header&gt;, &lt;nav&gt; o &lt;footer&gt;) que explican qué es cada parte de la página,
+        permite poner audio y vídeo sin plugins como Flash, y trae nuevos tipos de campos en los
+        formularios (email, date, color...). Además, el DOCTYPE es mucho más corto y se eliminan
+        etiquetas que solo servían para dar estilo, porque eso ahora se hace con CSS.
+    </p>
+
+    <h2>¿Deberían seguir usándose los marcos?</h2>
+    <p>
+        En mi opinión, no. Los marcos (&lt;frameset&gt; y &lt;frame&gt;) dividían la ventana en varias
+        páginas a la vez, pero daban muchos problemas: la dirección de la barra no cambiaba al
+        navegar, era difícil guardar en favoritos una página concreta, los buscadores no los indexaban
+        bien y funcionaban mal en móviles y con lectores de pantalla.
+    </p>
+    <p>
+        HTML5 los deja obsoletos porque ese mismo diseño se consigue mejor con CSS y etiquetas
+        semánticas. La única etiqueta parecida que se mantiene es &lt;iframe&gt;, que sigue siendo útil
+        para insertar contenido externo, por ejemplo un vídeo de YouTube o un mapa.
+    </p>
+
+    <h2>Tabla de diferencias</h2>
+    <table>
+        <tr>
+            <th>Aspecto</th>
+            <th>HTML4</th>
+            <th>HTML5</th>
+        </tr>
+        <tr>
+            <td>DOCTYPE</td>
+            <td>Largo y difícil de recordar</td>
+            <td>&lt;!DOCTYPE html&gt;</td>
+        </tr>
+        <tr>
+            <td>Codificación</td>
+            <td>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;</td>
+            <td>&lt;meta charset="UTF-8"&gt;</td>
+        </tr>
+        <tr>
+            <td>Estructura</td>
+            <td>Todo con &lt;div id="..."&gt;</td>
+            <td>Etiquetas semánticas: header, nav, main, section, article, aside, footer</td>
+        </tr>
+        <tr>
+            <td>Audio y vídeo</td>
+            <td>Necesitaba plugins (Flash)</td>
+            <td>Etiquetas &lt;audio&gt; y &lt;video&gt;</td>
+        </tr>
+        <tr>
+            <td>Gráficos</td>
+            <td>Solo imágenes o plugins</td>
+            <td>&lt;canvas&gt; y SVG</td>
+        </tr>
+        <tr>
+            <td>Formularios</td>
+            <td>Pocos tipos (text, password, checkbox...)</td>
+            <td>Nuevos tipos: email, date, number, color, range, url...<br>
+                Atributos required, placeholder, autofocus</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>&lt;frameset&gt; y &lt;frame&gt;</td>
+            <td>Eliminados (solo queda &lt;iframe&gt;)</td>
+        </tr>
+        <tr>
+            <td>Etiquetas de estilo</td>
+            <td>&lt;font&gt;, &lt;center&gt;, &lt;big&gt;...</td>
+            <td>Eliminadas, se usa CSS</td>
+        </tr>
+        <tr>
+            <td>Almacenamiento</td>
+            <td>Solo cookies</td>
+            <td>localStorage y sessionStorage</td>
+        </tr>
+        <tr>
+            <td>Móviles</td>
+            <td>Poco preparado</td>
+            <td>Pensado para todo tipo de dispositivos</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required autofocus>
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+        </p>
+
+        <p>
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" min="-120" max="183">
+        </p>
+
+        <p>
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label for="modulo">Módulo de DAW2:</label>
+            <select id="modulo" name="modulo">
+                <option>DESARROLLO WEB EN ENTORNO SERVIDOR</option>
+                <option selected>DESARROLLO DE ENTORNO CLIENTE</option>
+                <option>DESPLIEGUE DE APLICACIONES WEB</option>
+                <option>DISEÑO DE INTERFACES WEB</option>
+                <option>EMPRESA E INICIATIVA EMPRENDEDORA</option>
+                <option>PROYECTO DE DESARROLLO DE APLICACIONES WEB</option>
+            </select>
+        </p>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
