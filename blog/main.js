@@ -1,6 +1,6 @@
-document.getElementById("anio").textContent = new Date().getFullYear();
+document.getElementById("año").textContent = new Date().getFullYear();
 
-var boton = document.getElementById("boton-tema");
+var boton = document.getElementById("boton");
 
 boton.onclick = function () {
     if (document.body.className == "oscuro") {

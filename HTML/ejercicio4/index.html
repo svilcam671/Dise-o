@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML y HTML5</title>
+  <link rel="stylesheet" href="../estilos/general.css">
+</head>
+<body>
+  <h1>HTML5 frente a la versión anterior de HTML</h1>
+
+  <h2>¿Cuáles son las diferencias principales?</h2>
+  <p>
+    Para mí lo que más cambia es que HTML5 está pensado para la web de ahora. Antes casi todo
+    se hacía con <strong>&lt;div&gt;</strong> y había que usar <strong>plugins como Flash</strong>
+    para poner un vídeo o un juego. Ahora hay etiquetas que dicen qué es cada parte de la página,
+    el vídeo y el audio funcionan directamente en el navegador y los formularios tienen campos
+    nuevos que comprueban los datos ellos solos. También se ha simplificado mucho la cabecera del
+    documento.
+  </p>
+
+  <h2>¿Debería seguir usándose algún elemento, como los marcos?</h2>
+  <p>
+    Pienso que los marcos con &lt;frameset&gt; ya no tienen sentido, porque todo lo que se hacía
+    con ellos ahora se puede hacer mejor con CSS. Lo que sí sigue siendo útil es el
+    <strong>&lt;iframe&gt;</strong>, que permite meter dentro de una página un trozo de otra web,
+    por ejemplo un mapa o un vídeo.
+  </p>
+
+  <h2>¿Por qué HTML5 los deja obsoletos?</h2>
+  <p>Porque daban más problemas que ventajas:</p>
+  <ol>
+    <li>La dirección de la barra no cambiaba, así que no podías guardar en favoritos la página que veías.</li>
+    <li>Los buscadores no encontraban bien el contenido que estaba dentro de los marcos.</li>
+    <li>Las personas que usan lectores de pantalla se perdían entre tantos documentos.</li>
+    <li>En el móvil no se veían bien porque dividían la pantalla en trozos fijos.</li>
+  </ol>
+
+  <h2>Tabla de diferencias</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Característica</th>
+        <th>HTML (versión anterior)</th>
+        <th>HTML5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DOCTYPE</td>
+        <td>Muy largo, había que copiarlo</td>
+        <td>&lt;!DOCTYPE html&gt;</td>
+      </tr>
+      <tr>
+        <td>Juego de caracteres</td>
+        <td>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;</td>
+        <td>&lt;meta charset="UTF-8"&gt;</td>
+      </tr>
+      <tr>
+        <td>Partes de la página</td>
+        <td>&lt;div id="header"&gt;, &lt;div id="footer"&gt;...</td>
+        <td>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;</td>
+      </tr>
+      <tr>
+        <td>Multimedia</td>
+        <td>Plugins como Flash</td>
+        <td>&lt;audio&gt; y &lt;video&gt;</td>
+      </tr>
+      <tr>
+        <td>Dibujos y gráficos</td>
+        <td>Imágenes o Flash</td>
+        <td>&lt;canvas&gt; y &lt;svg&gt;</td>
+      </tr>
+      <tr>
+        <td>Campos de formulario</td>
+        <td>text, password, checkbox, radio...</td>
+        <td>Además: email, date, number, color, range, tel, url</td>
+      </tr>
+      <tr>
+        <td>Validación de formularios</td>
+        <td>Solo con JavaScript</td>
+        <td>Atributos required, min, max, pattern</td>
+      </tr>
+      <tr>
+        <td>Marcos</td>
+        <td>&lt;frameset&gt; y &lt;frame&gt;</td>
+        <td>Desaparecen, se queda &lt;iframe&gt;</td>
+      </tr>
+      <tr>
+        <td>Aspecto visual</td>
+        <td>&lt;font&gt;, &lt;center&gt;, atributo bgcolor</td>
+        <td>Todo con CSS</td>
+      </tr>
+      <tr>
+        <td>Guardar datos en el navegador</td>
+        <td>Cookies</td>
+        <td>localStorage y sessionStorage</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

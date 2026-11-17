@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Etiquetas HTML</title>
+  <link rel="stylesheet" href="../estilos/general.css">
+  <style>
+    .grupo {
+      background-color: #d7ebe6;
+      font-weight: bold;
+      color: #3f7f74;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi chuleta de HTML</h1>
+  <p>
+    He separado las etiquetas por grupos para encontrarlas más rápido cuando las necesite.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Etiqueta</th>
+        <th>Definición</th>
+        <th>Sintaxis</th>
+        <th>Ejemplo en vista web</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="4" class="grupo">Texto</td>
+      </tr>
+      <tr>
+        <td>&lt;h2&gt;</td>
+        <td>Encabezado de segundo nivel, para los apartados de la página.</td>
+        <td>&lt;h2&gt;Apartado&lt;/h2&gt;</td>
+        <td><h2>Apartado</h2></td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>Párrafo. El navegador deja un espacio antes y después.</td>
+        <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+        <td><p>Un párrafo de prueba</p></td>
+      </tr>
+      <tr>
+        <td>&lt;br&gt;</td>
+        <td>Salto de línea sin empezar un párrafo nuevo. Es una etiqueta vacía.</td>
+        <td>Arriba&lt;br&gt;Abajo</td>
+        <td>Arriba<br>Abajo</td>
+      </tr>
+      <tr>
+        <td>&lt;hr&gt;</td>
+        <td>Raya horizontal para separar temas. Es una etiqueta vacía.</td>
+        <td>&lt;hr&gt;</td>
+        <td><hr></td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt;</td>
+        <td>Marca un texto como importante. Sale en negrita.</td>
+        <td>&lt;strong&gt;Texto&lt;/strong&gt;</td>
+        <td><strong>¡Atención!</strong></td>
+      </tr>
+      <tr>
+        <td>&lt;em&gt;</td>
+        <td>Da énfasis a un texto. Sale en cursiva.</td>
+        <td>&lt;em&gt;Texto&lt;/em&gt;</td>
+        <td><em>muy</em> bonito</td>
+      </tr>
+      <tr>
+        <td>&lt;sub&gt;</td>
+        <td>Escribe el texto como subíndice.</td>
+        <td>H&lt;sub&gt;2&lt;/sub&gt;O</td>
+        <td>H<sub>2</sub>O</td>
+      </tr>
+      <tr>
+        <td>&lt;sup&gt;</td>
+        <td>Escribe el texto como superíndice.</td>
+        <td>3&lt;sup&gt;2&lt;/sup&gt;</td>
+        <td>3<sup>2</sup> = 9</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="grupo">Enlaces e imágenes</td>
+      </tr>
+      <tr>
+        <td>&lt;a&gt;</td>
+        <td>Enlace. Con href se indica a dónde lleva y con target="_blank" se abre en otra pestaña.</td>
+        <td>&lt;a href="url"&gt;Texto&lt;/a&gt;</td>
+        <td><a href="https://developer.mozilla.org/es/" target="_blank">Ir a MDN</a></td>
+      </tr>
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>Muestra una imagen. src es la ruta y alt el texto alternativo.</td>
+        <td>&lt;img src="foto.jpg" alt="texto"&gt;</td>
+        <td><img src="recursos/ejemplo.jpg" alt="Imagen de ejemplo" width="70"></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="grupo">Listas y tablas</td>
+      </tr>
+      <tr>
+        <td>&lt;ol&gt; y &lt;li&gt;</td>
+        <td>Lista numerada. Cada punto va en un li.</td>
+        <td>&lt;ol&gt;&lt;li&gt;Paso&lt;/li&gt;&lt;/ol&gt;</td>
+        <td>
+          <ol>
+            <li>Paso uno</li>
+            <li>Paso dos</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;ul&gt; y &lt;li&gt;</td>
+        <td>Lista con viñetas, sin números.</td>
+        <td>&lt;ul&gt;&lt;li&gt;Elemento&lt;/li&gt;&lt;/ul&gt;</td>
+        <td>
+          <ul>
+            <li>Pan</li>
+            <li>Leche</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</td>
+        <td>Tabla formada por filas (tr) y celdas (td).</td>
+        <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+        <td>
+          <table>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>Celda de encabezado de una tabla. Sale en negrita.</td>
+        <td>&lt;th&gt;Título&lt;/th&gt;</td>
+        <td>
+          <table>
+            <tr>
+              <th>Nombre</th>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="grupo">Contenedores</td>
+      </tr>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>Caja que agrupa otros elementos y ocupa todo el ancho.</td>
+        <td>&lt;div&gt;Contenido&lt;/div&gt;</td>
+        <td><div style="background-color: #d7ebe6; padding: 5px;">Soy una caja</div></td>
+      </tr>
+      <tr>
+        <td>&lt;span&gt;</td>
+        <td>Sirve para cambiar el estilo de un trozo de texto sin romper la línea.</td>
+        <td>&lt;span&gt;Texto&lt;/span&gt;</td>
+        <td>Me gusta el color <span style="color: blue;">azul</span>.</td>
+      </tr>
+      <tr>
+        <td>&lt;pre&gt;</td>
+        <td>Muestra el texto tal cual, respetando los espacios y los saltos.</td>
+        <td>&lt;pre&gt;Texto&lt;/pre&gt;</td>
+        <td><pre>uno    dos
+  tres</pre></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="grupo">Formularios</td>
+      </tr>
+      <tr>
+        <td>&lt;input type="checkbox"&gt;</td>
+        <td>Casilla que se puede marcar o desmarcar.</td>
+        <td>&lt;input type="checkbox"&gt;</td>
+        <td><input type="checkbox" id="ej-acepto"> <label for="ej-acepto">Acepto</label></td>
+      </tr>
+      <tr>
+        <td>&lt;input type="radio"&gt;</td>
+        <td>Opciones de las que solo se puede elegir una (tienen el mismo name).</td>
+        <td>&lt;input type="radio" name="grupo"&gt;</td>
+        <td>
+          <input type="radio" name="ej-turno" id="ej-manana"> <label for="ej-manana">Mañana</label>
+          <input type="radio" name="ej-turno" id="ej-tarde"> <label for="ej-tarde">Tarde</label>
+        </td>
+      </tr>
+      <tr>
+        <td>&lt;input type="password"&gt;</td>
+        <td>Campo para contraseñas: oculta lo que se escribe.</td>
+        <td>&lt;input type="password"&gt;</td>
+        <td><input type="password" value="secreto"></td>
+      </tr>
+      <tr>
+        <td>&lt;textarea&gt;</td>
+        <td>Caja para escribir textos de varias líneas.</td>
+        <td>&lt;textarea rows="2"&gt;&lt;/textarea&gt;</td>
+        <td><textarea rows="2" cols="18" placeholder="Comentario"></textarea></td>
+      </tr>
+      <tr>
+        <td>&lt;button&gt;</td>
+        <td>Botón que se puede pulsar.</td>
+        <td>&lt;button type="button"&gt;Texto&lt;/button&gt;</td>
+        <td><button type="button">Aceptar</button></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="grupo">Estructura HTML5</td>
+      </tr>
+      <tr>
+        <td>&lt;main&gt;</td>
+        <td>Contenido principal de la página. Solo debe haber uno.</td>
+        <td>&lt;main&gt;Contenido&lt;/main&gt;</td>
+        <td><main>Contenido principal</main></td>
+      </tr>
+      <tr>
+        <td>&lt;section&gt;</td>
+        <td>Sección de la página que agrupa contenido del mismo tema.</td>
+        <td>&lt;section&gt;...&lt;/section&gt;</td>
+        <td><section style="border: 1px dashed #a9cbe0;">Una sección</section></td>
+      </tr>
+      <tr>
+        <td>&lt;article&gt;</td>
+        <td>Contenido que tiene sentido por sí solo, como una noticia.</td>
+        <td>&lt;article&gt;...&lt;/article&gt;</td>
+        <td><article style="border: 1px dashed #a9cbe0;">Una noticia</article></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -20,7 +20,7 @@ header h1 {
     color: #5eead4;
 }
 
-.lema {
+.subtitulo {
     margin: 5px 0 20px 0;
     color: #cbd5e1;
 }
@@ -48,7 +48,7 @@ nav a:hover {
     background-color: #14b8a6;
 }
 
-#boton-tema {
+#boton {
     background-color: #14b8a6;
     color: white;
     border: none;
@@ -57,7 +57,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-#boton-tema:hover {
+#boton:hover {
     background-color: #0d9488;
 }
 
@@ -74,7 +74,7 @@ main {
     flex: 1;
 }
 
-.titulo-seccion {
+.titulosSecc {
     margin-top: 0;
     font-size: 1.8rem;
     color: #0f766e;

@@ -1,181 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival de Música de Málaga</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        article {
-            border: 1px solid lightgray;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        table {
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 6px;
-        }
-        footer {
-            text-align: center;
-            color: gray;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana de Cine de Verano</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Festival de Música de Málaga 2027</h1>
-        <p>Tres días de música en directo junto al mar</p>
-        <nav>
-            <a href="#info">Información</a>
-            <a href="#artistas">Artistas</a>
-            <a href="#programa">Programa</a>
-            <a href="#multimedia">Multimedia</a>
-            <a href="#entradas">Entradas</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Semana de Cine de Verano</h1>
+    <p>Películas al aire libre todas las noches</p>
+    <nav>
+      <ul>
+        <li><a href="#evento">El evento</a></li>
+        <li><a href="#invitados">Invitados</a></li>
+        <li><a href="#programa">Programa</a></li>
+        <li><a href="#multimedia">Tráiler</a></li>
+        <li><a href="#inscripcion">Inscripción</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="info">
-            <h2>Información del evento</h2>
-            <p><strong>Fecha:</strong> del 9 al 11 de julio de 2027</p>
-            <p><strong>Ubicación:</strong> Auditorio Municipal Cortijo de Torres, Málaga</p>
-            <p><strong>Horario:</strong> de 18:00 a 01:00</p>
+  <main>
+    <section id="evento">
+      <h2>El evento</h2>
+      <img src="recursos/cartel.jpg" alt="Cartel de la Semana de Cine de Verano" width="260">
+      <p><strong>Cuándo:</strong> del 2 al 6 de agosto de 2027, a las 22:00</p>
+      <p><strong>Dónde:</strong> Plaza Mayor, junto al ayuntamiento</p>
+      <p><strong>Precio:</strong> entrada gratuita hasta completar aforo</p>
+    </section>
 
-            <!-- Elemento gráfico con canvas: un logo sencillo -->
-            <canvas id="logo" width="200" height="100"></canvas>
-        </section>
+    <section id="invitados">
+      <h2>Invitados</h2>
+      <article>
+        <h3>Laura Méndez</h3>
+        <p>Directora de cortometrajes. Presentará su nueva película el primer día.</p>
+      </article>
+      <article>
+        <h3>Javier Ruiz</h3>
+        <p>Actor de teatro y cine. Hará un coloquio con el público.</p>
+      </article>
+      <article>
+        <h3>Banda Sonora Trío</h3>
+        <p>Grupo que tocará en directo canciones famosas de películas.</p>
+      </article>
+    </section>
 
-        <section id="artistas">
-            <h2>Artistas invitados</h2>
-            <article>
-                <h3>Los Boquerones</h3>
-                <p>Grupo de pop-rock malagueño con 10 años de carrera.</p>
-            </article>
-            <article>
-                <h3>DJ Biznaga</h3>
-                <p>Sesiones de música electrónica para cerrar cada noche.</p>
-            </article>
-            <article>
-                <h3>Coro del Sur</h3>
-                <p>Coro que mezcla música clásica y flamenco.</p>
-            </article>
-        </section>
+    <section id="programa">
+      <h2>Programa</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Actividad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2 de agosto</td>
+            <td>Inauguración y estreno de la película de Laura Méndez</td>
+          </tr>
+          <tr>
+            <td>3 de agosto</td>
+            <td>Película de animación para toda la familia</td>
+          </tr>
+          <tr>
+            <td>4 de agosto</td>
+            <td>Película de comedia y coloquio con Javier Ruiz</td>
+          </tr>
+          <tr>
+            <td>5 de agosto</td>
+            <td>Noche de cine de terror</td>
+          </tr>
+          <tr>
+            <td>6 de agosto</td>
+            <td>Clausura con el concierto de Banda Sonora Trío</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-        <section id="programa">
-            <h2>Programa</h2>
-            <table>
-                <tr>
-                    <th>Día</th>
-                    <th>Hora</th>
-                    <th>Artista</th>
-                </tr>
-                <tr>
-                    <td>9 de julio</td>
-                    <td>20:00</td>
-                    <td>Coro del Sur</td>
-                </tr>
-                <tr>
-                    <td>10 de julio</td>
-                    <td>21:00</td>
-                    <td>Los Boquerones</td>
-                </tr>
-                <tr>
-                    <td>11 de julio</td>
-                    <td>23:00</td>
-                    <td>DJ Biznaga</td>
-                </tr>
-            </table>
-        </section>
+    <section id="multimedia">
+      <h2>Tráiler y música</h2>
+      <video src="recursos/trailer.mp4" controls width="480">
+        Tu navegador no puede reproducir el vídeo.
+      </video>
+      <p>Escucha la canción oficial del festival:</p>
+      <audio src="recursos/cancion.mp3" controls>
+        Tu navegador no puede reproducir el audio.
+      </audio>
+    </section>
 
-        <section id="multimedia">
-            <h2>Multimedia</h2>
+    <section id="inscripcion">
+      <h2>Reserva tu sitio</h2>
+      <svg width="220" height="90" role="img" aria-label="Entrada de cine">
+        <rect x="5" y="5" width="210" height="80" rx="10" fill="#e8c35a"></rect>
+        <line x1="160" y1="10" x2="160" y2="80" stroke="#1f2a38" stroke-width="2" stroke-dasharray="5,5"></line>
+        <text x="20" y="40" font-size="18" fill="#1f2a38">ENTRADA</text>
+        <text x="20" y="65" font-size="13" fill="#1f2a38">Cine de Verano 2027</text>
+        <text x="172" y="52" font-size="16" fill="#1f2a38">Nº1</text>
+      </svg>
+      <form action="#">
+        <p>
+          <label for="nombre">Nombre y apellidos</label>
+          <input type="text" id="nombre" required>
+        </p>
+        <p>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+        </p>
+        <p>
+          <label for="dia">Día</label>
+          <input type="date" id="dia" min="2027-08-02" max="2027-08-06" required>
+        </p>
+        <p>
+          <label for="personas">Personas</label>
+          <input type="number" id="personas" min="1" max="4" value="1">
+        </p>
+        <p>
+          <label for="pelicula">Tipo de película</label>
+          <select id="pelicula">
+            <option>Animación</option>
+            <option>Comedia</option>
+            <option>Terror</option>
+          </select>
+        </p>
+        <p>
+          <input type="checkbox" id="avisos">
+          <label for="avisos" class="normal">Quiero recibir avisos de próximos eventos</label>
+        </p>
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+  </main>
 
-            <h3>Escucha un adelanto</h3>
-            <!-- Coloca tu archivo de audio en la carpeta media -->
-            <audio controls>
-                <source src="media/adelanto.mp3" type="audio/mpeg">
-                Tu navegador no soporta audio.
-            </audio>
-
-            <h3>Vídeo de la edición anterior</h3>
-            <!-- Coloca tu archivo de vídeo en la carpeta media -->
-            <video controls width="400">
-                <source src="media/video.mp4" type="video/mp4">
-                Tu navegador no soporta vídeo.
-            </video>
-
-            <figure>
-                <!-- Elemento gráfico con SVG: una nota musical -->
-                <svg width="80" height="80">
-                    <circle cx="25" cy="60" r="12" fill="purple" />
-                    <rect x="35" y="10" width="4" height="50" fill="purple" />
-                </svg>
-                <figcaption>¡Música para todos!</figcaption>
-            </figure>
-        </section>
-
-        <section id="entradas">
-            <h2>Reserva tus entradas</h2>
-            <form>
-                <p>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Tu nombre" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="correo@ejemplo.com" required>
-                </p>
-                <p>
-                    <label for="dia">Día:</label>
-                    <input type="date" id="dia" min="2027-07-09" max="2027-07-11" required>
-                </p>
-                <p>
-                    <label for="cantidad">Número de entradas:</label>
-                    <input type="number" id="cantidad" min="1" max="6" value="1">
-                </p>
-                <p>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" placeholder="600 000 000">
-                </p>
-                <button type="submit">Reservar</button>
-            </form>
-        </section>
-    </main>
-
-    <aside>
-        <p><strong>Aviso:</strong> el acceso para menores de 16 años debe ser acompañado.</p>
-    </aside>
-
-    <footer>
-        <p>&copy; 2027 Festival de Música de Málaga</p>
-    </footer>
-
-    <script>
-        // Dibujo sencillo en el canvas
-        let canvas = document.getElementById("logo");
-        let ctx = canvas.getContext("2d");
-        ctx.fillStyle = "orange";
-        ctx.fillRect(0, 0, 200, 100);
-        ctx.fillStyle = "white";
-        ctx.font = "24px Arial";
-        ctx.fillText("FMM 2027", 45, 58);
-    </script>
+  <footer>
+    <p>Semana de Cine de Verano 2027 · Página hecha por Sergio</p>
+  </footer>
 </body>
 </html>

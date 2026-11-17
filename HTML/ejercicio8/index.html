@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ficha del alumno</title>
+  <link rel="stylesheet" href="../estilos/general.css">
+</head>
+<body>
+  <h1>Ficha del alumno</h1>
+  <p>Rellena la ficha. Los campos marcados con * son obligatorios.</p>
+
+  <form action="#">
+    <fieldset>
+      <legend>Sobre ti</legend>
+      <p>
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required autofocus>
+      </p>
+      <p>
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferencias</legend>
+      <p>
+        <label for="numero">Número (-120 a 183)</label>
+        <input type="number" id="numero" name="numero" min="-120" max="183">
+      </p>
+      <p>
+        <label for="color">Color favorito</label>
+        <input type="color" id="color" name="color" value="#3f7f74">
+      </p>
+      <p>
+        <label for="modulo">Módulo de DAW2</label>
+        <select id="modulo" name="modulo">
+          <option>DESPLIEGUE DE APLICACIONES WEB</option>
+          <option>DISEÑO DE INTERFACES WEB</option>
+          <option selected>DESARROLLO DE ENTORNO CLIENTE</option>
+          <option>DESARROLLO DE ENTORNO SERVIDOR</option>
+          <option>INGLÉS</option>
+          <option>PROYECTO INTERMODULAR</option>
+          <option>OPTATIVA</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <button type="submit">Guardar ficha</button>
+  </form>
+</body>
+</html>

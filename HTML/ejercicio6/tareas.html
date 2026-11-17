@@ -1,68 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestor de tareas - Mis tareas</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <title>Tareas</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Gestor de tareas</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="tareas.html">Mis tareas</a>
-            <a href="enlaces.html">Enlaces de interés</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Organizador de tareas</h1>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="tareas.html">Tareas</a> |
+      <a href="enlaces.html">Productividad</a>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Agregar tarea</h2>
-        <form onsubmit="agregarTarea(); return false;">
-            <label for="nuevaTarea">Tarea:</label>
-            <input type="text" id="nuevaTarea" required>
-            <button type="submit">Agregar</button>
-        </form>
+  <main>
+    <h2>Tareas pendientes</h2>
 
-        <h2>Lista de tareas</h2>
-        <ul id="lista">
-            <li>
-                <span>Estudiar HTML</span>
-                <button onclick="editarTarea(this)">Editar</button>
-                <button onclick="eliminarTarea(this)">Eliminar</button>
-            </li>
-        </ul>
-    </main>
+    <form id="formTarea">
+      <label for="textoTarea">Tarea:</label>
+      <input type="text" id="textoTarea" placeholder="Por ejemplo: estudiar CSS" required>
+      <button type="submit">Añadir</button>
+    </form>
 
-    <footer>
-        <p>Gestor de tareas - 2º DAW</p>
-    </footer>
+    <table>
+      <thead>
+        <tr>
+          <th>Hecha</th>
+          <th>Tarea</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaTareas"></tbody>
+    </table>
+  </main>
 
-    <script>
-        function agregarTarea() {
-            let campo = document.getElementById("nuevaTarea");
-            let texto = campo.value;
+  <footer>
+    <p>Organizador de tareas · Sergio · 2º DAW</p>
+  </footer>
 
-            let li = document.createElement("li");
-            li.innerHTML = "<span>" + texto + "</span> " +
-                "<button onclick='editarTarea(this)'>Editar</button>" +
-                "<button onclick='eliminarTarea(this)'>Eliminar</button>";
-
-            document.getElementById("lista").appendChild(li);
-            campo.value = "";
-        }
-
-        function editarTarea(boton) {
-            let span = boton.parentElement.querySelector("span");
-            let nuevoTexto = prompt("Edita la tarea:", span.textContent);
-            if (nuevoTexto) {
-                span.textContent = nuevoTexto;
-            }
-        }
-
-        function eliminarTarea(boton) {
-            boton.parentElement.remove();
-        }
-    </script>
+  <script src="js/tareas.js"></script>
 </body>
 </html>
