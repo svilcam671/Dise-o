@@ -3,43 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Tareas</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Organizador de tareas</h1>
+    <h1>Gestor de tareas</h1>
     <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="tareas.html">Tareas</a> |
-      <a href="enlaces.html">Productividad</a>
+      <a href="index.html">Inicio</a>
+      <a href="tareas.html">Tareas</a>
+      <a href="enlaces.html">Enlaces</a>
     </nav>
   </header>
 
   <main>
-    <h2>Tareas pendientes</h2>
+    <h2>Nueva tarea</h2>
 
     <form id="formTarea">
-      <label for="textoTarea">Tarea:</label>
-      <input type="text" id="textoTarea" placeholder="Por ejemplo: estudiar CSS" required>
-      <button type="submit">Añadir</button>
+      <p>
+        <label for="nombre">Tarea:</label>
+        <input type="text" id="nombre" placeholder="Escribe una tarea" required>
+      </p>
+      <p>
+        <label for="fecha">Fecha límite:</label>
+        <input type="date" id="fecha" required>
+      </p>
+      <p>
+        <label for="prioridad">Prioridad:</label>
+        <select id="prioridad">
+          <option>Baja</option>
+          <option selected>Media</option>
+          <option>Alta</option>
+        </select>
+      </p>
+      <p>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" rows="3" placeholder="Opcional"></textarea>
+      </p>
+      <button type="submit">Agregar</button>
     </form>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Hecha</th>
-          <th>Tarea</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody id="tablaTareas"></tbody>
-    </table>
+    <h2>Mis tareas</h2>
+    <ul id="lista"></ul>
   </main>
 
   <footer>
-    <p>Organizador de tareas · Sergio · 2º DAW</p>
+    <p>© Sergio</p>
   </footer>
-
-  <script src="js/tareas.js"></script>
 </body>
 </html>

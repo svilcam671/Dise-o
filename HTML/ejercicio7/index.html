@@ -2,140 +2,100 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semana de Cine de Verano</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <title>Ejercicio 7</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header>
-    <h1>Semana de Cine de Verano</h1>
-    <p>Películas al aire libre todas las noches</p>
+    <h1>Festival de Música de Verano</h1>
     <nav>
-      <ul>
-        <li><a href="#evento">El evento</a></li>
-        <li><a href="#invitados">Invitados</a></li>
-        <li><a href="#programa">Programa</a></li>
-        <li><a href="#multimedia">Tráiler</a></li>
-        <li><a href="#inscripcion">Inscripción</a></li>
-      </ul>
+      <a href="#informacion">Información</a>
+      <a href="#invitados">Invitados</a>
+      <a href="#programa">Programa</a>
+      <a href="#multimedia">Multimedia</a>
+      <a href="#inscripcion">Inscripción</a>
     </nav>
   </header>
 
   <main>
-    <section id="evento">
-      <h2>El evento</h2>
-      <img src="recursos/cartel.jpg" alt="Cartel de la Semana de Cine de Verano" width="260">
-      <p><strong>Cuándo:</strong> del 2 al 6 de agosto de 2027, a las 22:00</p>
-      <p><strong>Dónde:</strong> Plaza Mayor, junto al ayuntamiento</p>
-      <p><strong>Precio:</strong> entrada gratuita hasta completar aforo</p>
+    <section id="informacion">
+      <h2>Información</h2>
+      <p><strong>Fecha:</strong> 5 y 6 de agosto de 2027</p>
+      <p><strong>Lugar:</strong> Palacio de ferias y congresos</p>
+      <p><strong>Hora:</strong> 21:00</p>
     </section>
 
     <section id="invitados">
       <h2>Invitados</h2>
       <article>
-        <h3>Laura Méndez</h3>
-        <p>Directora de cortometrajes. Presentará su nueva película el primer día.</p>
+        <h3>The Weeknd</h3>
+        <img src="recursos/weeknd.jpg" alt="The Weeknd">
       </article>
       <article>
-        <h3>Javier Ruiz</h3>
-        <p>Actor de teatro y cine. Hará un coloquio con el público.</p>
-      </article>
-      <article>
-        <h3>Banda Sonora Trío</h3>
-        <p>Grupo que tocará en directo canciones famosas de películas.</p>
+        <h3>Twenty One Pilots</h3>
+        <img src="recursos/onepilots.jpg" alt="Twenty One Pilots">
       </article>
     </section>
 
     <section id="programa">
       <h2>Programa</h2>
       <table>
-        <thead>
-          <tr>
-            <th>Día</th>
-            <th>Actividad</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2 de agosto</td>
-            <td>Inauguración y estreno de la película de Laura Méndez</td>
-          </tr>
-          <tr>
-            <td>3 de agosto</td>
-            <td>Película de animación para toda la familia</td>
-          </tr>
-          <tr>
-            <td>4 de agosto</td>
-            <td>Película de comedia y coloquio con Javier Ruiz</td>
-          </tr>
-          <tr>
-            <td>5 de agosto</td>
-            <td>Noche de cine de terror</td>
-          </tr>
-          <tr>
-            <td>6 de agosto</td>
-            <td>Clausura con el concierto de Banda Sonora Trío</td>
-          </tr>
-        </tbody>
+        <tr>
+          <th>Día</th>
+          <th>Hora</th>
+          <th>Artista</th>
+        </tr>
+        <tr>
+          <td>5 de agosto</td>
+          <td>21:00</td>
+          <td>Twenty One Pilots</td>
+        </tr>
+        <tr>
+          <td>6 de agosto</td>
+          <td>21:00</td>
+          <td>The Weeknd</td>
+        </tr>
       </table>
     </section>
 
     <section id="multimedia">
-      <h2>Tráiler y música</h2>
-      <video src="recursos/trailer.mp4" controls width="480">
-        Tu navegador no puede reproducir el vídeo.
-      </video>
-      <p>Escucha la canción oficial del festival:</p>
-      <audio src="recursos/cancion.mp3" controls>
-        Tu navegador no puede reproducir el audio.
-      </audio>
+      <h2>Multimedia</h2>
+      <h3>Vídeo</h3>
+      <video src="recursos/blinding.mp4" controls></video>
+      <h3>Canción</h3>
+      <audio src="recursos/stressed.mp3" controls></audio>
     </section>
 
     <section id="inscripcion">
-      <h2>Reserva tu sitio</h2>
-      <svg width="220" height="90" role="img" aria-label="Entrada de cine">
-        <rect x="5" y="5" width="210" height="80" rx="10" fill="#e8c35a"></rect>
-        <line x1="160" y1="10" x2="160" y2="80" stroke="#1f2a38" stroke-width="2" stroke-dasharray="5,5"></line>
-        <text x="20" y="40" font-size="18" fill="#1f2a38">ENTRADA</text>
-        <text x="20" y="65" font-size="13" fill="#1f2a38">Cine de Verano 2027</text>
-        <text x="172" y="52" font-size="16" fill="#1f2a38">Nº1</text>
-      </svg>
-      <form action="#">
+      <h2>Inscripción</h2>
+      <form>
         <p>
-          <label for="nombre">Nombre y apellidos</label>
+          <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" required>
         </p>
         <p>
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" placeholder="tucorreo@ejemplo.com" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
         </p>
         <p>
-          <label for="dia">Día</label>
-          <input type="date" id="dia" min="2027-08-02" max="2027-08-06" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono">
         </p>
         <p>
-          <label for="personas">Personas</label>
-          <input type="number" id="personas" min="1" max="4" value="1">
+          <label for="dia">Día:</label>
+          <input type="date" id="dia" min="2027-08-05" max="2027-08-06" required>
         </p>
         <p>
-          <label for="pelicula">Tipo de película</label>
-          <select id="pelicula">
-            <option>Animación</option>
-            <option>Comedia</option>
-            <option>Terror</option>
-          </select>
+          <label for="entradas">Entradas:</label>
+          <input type="number" id="entradas" min="1" max="5" value="1">
         </p>
-        <p>
-          <input type="checkbox" id="avisos">
-          <label for="avisos" class="normal">Quiero recibir avisos de próximos eventos</label>
-        </p>
-        <button type="submit">Reservar</button>
+        <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Semana de Cine de Verano 2027 · Página hecha por Sergio</p>
+    <p>@Copyright Sergio</p>
   </footer>
 </body>
 </html>

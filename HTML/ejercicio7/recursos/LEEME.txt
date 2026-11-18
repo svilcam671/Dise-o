@@ -1,4 +1,0 @@
-Pon aqui:
-- cartel.jpg  (cartel del evento)
-- trailer.mp4 (un video corto)
-- cancion.mp3 (una cancion corta)
