@@ -1,0 +1,40 @@
+body {
+  color: white;
+  text-align: center;
+  background-image: url("../FONDOS_PARA_WEB/fondo.jpg");
+  background-size: cover;
+  padding: 20px;
+}
+
+ol {
+  display: inline-block;
+  text-align: left;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px 12px;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.recreo {
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+a {
+  color: lightblue;
+}
+
+img {
+  width: 20%;
+}

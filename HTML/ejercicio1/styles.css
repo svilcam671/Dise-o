@@ -1,4 +1,6 @@
-* {
-    color: white;
-    text-align: center;
+body {
+  color: white;
+  text-align: center;
+  background-image: url("../FONDOS_PARA_WEB/fondo.jpg");
+  background-size: cover;
 }

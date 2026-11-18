@@ -2,50 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>La web de Sergio</title>
+  <title>Ejercicio 2</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
-<body background="../FONDOS_PARA_WEB/fondo.jpg">
-  <h1>La web de Sergio</h1>
-  <img src="recursos/foto.jpg" alt="Foto de Sergio" width="160" align="right">
-  <p>
-    Hola, soy <strong>Sergio</strong>. En mi tiempo libre juego a videojuegos y
-    salgo con mis amigos. <em>Este año termino el ciclo</em>.
-  </p>
+<body>
+  <h1 id="prin">Ejercicio 2</h1>
+  <img src="recursos/imagen.jpg" alt="Imagen de ejemplo">
+  <p>Esto es un párrafo para escribir texto en la web</p>
 
-  <h2>Mi top 3 de videojuegos</h2>
+  <h2>Lenguajes</h2>
   <ol>
-    <li>Hollow Knight</li>
-    <li>The Legend of Zelda: Breath of the Wild</li>
-    <li>BioShock Infinite</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+    <li>React</li>
   </ol>
 
   <hr>
 
-  <h2>Mi horario de tardes</h2>
-  <table border="1">
+  <h2>Horario</h2>
+  <table>
     <tr>
-      <th>Día</th>
-      <th>Qué hago</th>
+      <th>Horas</th>
+      <th>Lunes</th>
+      <th>Martes</th>
+      <th>Miércoles</th>
+      <th>Jueves</th>
+      <th>Viernes</th>
     </tr>
     <tr>
-      <td>Lunes</td>
-      <td>Clase y repaso</td>
+      <td>08:30-09:30</td>
+      <td>Optativa</td>
+      <td rowspan="2">Cliente</td>
+      <td rowspan="2">Optativa</td>
+      <td rowspan="2">Cliente</td>
+      <td rowspan="2">Cliente</td>
     </tr>
     <tr>
-      <td>Miércoles</td>
-      <td>Gimnasio</td>
+      <td>09:30-10:30</td>
+      <td rowspan="2">Inglés</td>
     </tr>
     <tr>
-      <td>Viernes</td>
-      <td>Libre</td>
+      <td>10:30-11:30</td>
+      <td>Despliegue</td>
+      <td>Diseño</td>
+      <td></td>
+      <td>Proyecto</td>
+    </tr>
+    <tr>
+      <td>11:30-12:00</td>
+      <td colspan="5" class="recreo">RECREO</td>
+    </tr>
+    <tr>
+      <td>12:00-13:00</td>
+      <td rowspan="2">Servidor</td>
+      <td>Despliegue</td>
+      <td>Diseño</td>
+      <td></td>
+      <td>Proyecto</td>
+    </tr>
+    <tr>
+      <td>13:00-14:00</td>
+      <td></td>
+      <td rowspan="2">Servidor</td>
+      <td rowspan="2">Diseño</td>
+      <td rowspan="2">Servidor</td>
+    </tr>
+    <tr>
+      <td>14:00-15:00</td>
+      <td>Diseño</td>
+      <td>Servidor</td>
     </tr>
   </table>
 
-  <h2>Contacto</h2>
-  <p>
-    Si quieres decirme algo escríbeme a
-    <a href="mailto:sergio@ejemplo.com">sergio@ejemplo.com</a><br>
-    Te contestaré en cuanto pueda.
-  </p>
+  <h2>Prueba enlace</h2>
+  <p><a href="#prin">Volver arriba</a></p>
+
 </body>
 </html>
