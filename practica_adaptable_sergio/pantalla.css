@@ -1,0 +1,175 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333333;
+}
+
+header {
+  background-color: white;
+  padding-bottom: 5px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: gray;
+  font-style: italic;
+}
+
+.decorativa {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid;
+}
+
+article {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+article img {
+  border-radius: 8px;
+}
+
+footer {
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-color: #e3ecf5;
+    font-size: 18px;
+  }
+
+  nav,
+  footer {
+    background-color: #2c5282;
+  }
+
+  h1,
+  h2 {
+    color: #2c5282;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  main {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  article {
+    overflow: hidden;
+  }
+
+  article img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: #e6f4ea;
+    font-size: 16px;
+  }
+
+  nav,
+  footer {
+    background-color: #2f855a;
+  }
+
+  h1,
+  h2 {
+    color: #2f855a;
+  }
+
+  nav li {
+    display: inline-block;
+    width: 32%;
+  }
+
+  article {
+    text-align: center;
+  }
+
+  article img {
+    display: block;
+    width: 70%;
+    margin: 0 auto 15px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: #fdf0e3;
+    font-size: 14px;
+  }
+
+  nav,
+  footer {
+    background-color: #c05621;
+  }
+
+  h1,
+  h2 {
+    color: #c05621;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .decorativa {
+    height: 120px;
+  }
+
+  nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  article {
+    padding: 15px;
+  }
+
+  article img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

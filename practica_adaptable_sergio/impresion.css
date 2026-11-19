@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-size: 12pt;
+}
+
+nav,
+.decorativa {
+  display: none;
+}
+
+article img {
+  width: 150px;
+}
+
+article {
+  page-break-inside: avoid;
+}
+
+footer {
+  border-top: 1px solid black;
+}
