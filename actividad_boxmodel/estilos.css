@@ -1,0 +1,87 @@
+/* Estilos generales de la página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  color: #333333;
+}
+
+/* Cabecera con altura de 100px, padding arriba y abajo de 10px y izquierda y derecha de 30px, color de fondo azul, color de letra blanco */
+header {
+  height: 100px;
+  padding: 10px 30px;
+  background-color: #1e3a5f;
+  color: white;
+}
+
+/* Clase logo con ancho de 80px, altura 80px, margen superior de 10px, margen derecho de 20px y margen inferior y izquierdo de 0, con float a la izquierda */
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 10px 20px 0 0;
+  float: left;
+}
+
+/* H1 dentro del header con margin 0 y con altura de 100px de la linea para que se centre en relacion al logo*/
+header h1 {
+  margin: 0;
+  line-height: 100px;
+}
+
+/* Caja seccion nosotros con ancho del 70%, margenes arriba y abajo de 30px y auto a derecha e izquierda, padding de 20px, borde de 3px solid en color azul y color de fondo blanco azulado*/
+#nosotros {
+  width: 70%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 3px solid #1e3a5f;
+  background-color: #d6e4f0;
+}
+
+/* Caja seccion de servicios con ancho 80%, altura 300px, margenes arriba y abajo de 40px y auto a los lados, padding de 40px, ajusta el contenido al borde de la caja con border-box,
+borde de 4px discontinuo en color azul claro, con una imagen de fondo con la propiedad para que cubra la caja y posicionada al centro */
+#servicios {
+  width: 80%;
+  height: 300px;
+  margin: 40px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 4px dashed #4a6fa5;
+  background-image: url("recursos/servicios.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Caja div con texto dentro de serivicios con un ancho maximo de 300px, padding de 15px arriba y abajo y 25px a los lados y color de fondo blanco*/
+#servicios .texto {
+  max-width: 300px;
+  padding: 15px 25px;
+  background-color: white;
+}
+
+/* Caja seccion de contacto con ancho del 50%, margenes arriba y abajo de 40px y auto a los lados, padding de 30px arriba y abajo y 40px a los lados, borde doble de 6px en color azul oscuro y color de fondo gris */
+#contacto {
+  width: 50%;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border: 6px double #1e3a5f;
+  background-color: #dcdcdc;
+}
+
+/* H2 sin margen superior y color azul */
+h2 {
+  margin-top: 0;
+  color: #1e3a5f;
+}
+
+/* footer con padding 15px, color de fondo azul, letra en blanco y texto centrado */
+footer {
+  padding: 15px;
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+}
+
+/* parrafo dentro del footer con margen 0 */
+footer p {
+  margin: 0;
+}
