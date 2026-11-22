@@ -10,28 +10,12 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 10px 0 0 0;
-}
-
-header p {
-  margin: 5px 0 15px 0;
-}
-
 main {
   padding: 15px;
 }
 
-article {
-  margin-bottom: 20px;
-}
-
-article h3 {
-  margin-top: 0;
-}
-
-article img {
-  max-width: 100%;
+section {
+  margin-bottom: 25px;
 }
 
 footer {
